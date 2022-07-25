@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lesson 20</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body>
+    <section>
+      <div class="new-btn">
+        <button id="reg-modal">Add New User</button>
+      </div>
+      <div class="table">
+        <table>
+          <tr class="first-tr">
+            <td>ID</td>
+            <td>Name</td>
+            <td>Surname</td>
+            <td>Email</td>
+            <td>Personal ID</td>
+            <td>Mobile Number</td>
+            <td>ZIP</td>
+            <td>Gender</td>
+            <td>Actions</td>
+          </tr>
+          <tr class="second-tr">
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>
+              <div>
+                <button class="f-button">Edit</button>
+                <button class="s-button">Delete</button>
+              </div>
+            </td>
+          </tr>
+        </table>
+      </div>
+      <div class="modal" id="registration-modal">
+        <div class="modal-parent">
+          <div class="modal-header">
+            <button class="btn modal-close">X</button>
+          </div>
+          <div class="modal-body">
+            <form action="/save-user" method="" class="registration" novalidate>
+              <div class="input-field">
+                <label for="name">Your Name</label>
+                <input type="text" id="name" placeholder="Name" />
+              </div>
+              <div class="input-field">
+                <label for="surname">Your Surname</label>
+                <input type="text" id="surname" placeholder="Surname" />
+              </div>
+              <div class="input-field">
+                <label for="email">Your Email</label>
+                <input type="email" id="email" placeholder="Email" />
+              </div>
+              <div class="input-field">
+                <label for="personal-id">Your Personal ID</label>
+                <input
+                  type="number"
+                  id="personal-id"
+                  placeholder="Personal ID"
+                />
+              </div>
+              <div class="input-field">
+                <label for="mobile-number">Your Mobile Number</label>
+                <input
+                  type="number"
+                  id="mobile-number"
+                  placeholder="Mobile Number"
+                />
+              </div>
+              <div class="input-field">
+                <label for="zip">Your ZIP Code</label>
+                <input type="number" id="zip" placeholder="ZIP Code" />
+              </div>
+              <div class="input-field">
+                <label for="gender">Your Gender</label>
+                <input type="text" id="gender" placeholder="Gender" />
+              </div>
+              <div class="btn-div">
+                <button>Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

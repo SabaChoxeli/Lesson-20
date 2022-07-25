@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.new-btn {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+
+.new-btn button {
+  width: 100px;
+  height: 40px;
+}
+
+.table {
+  /* display: none; */
+  position: relative;
+}
+
+td {
+  border: solid black 1px;
+  border-collapse: collapse;
+}
+
+.first-tr td {
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+}
+
+.second-tr td {
+  padding: 10px;
+}
+
+.f-button {
+  background-color: lightgreen;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.s-button {
+  background-color: red;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 10%;
+  cursor: pointer;
+}
+
+.modal {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
+
+.modal.open {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.modal-parent {
+  max-width: 700px;
+  width: 80%;
+  margin: auto;
+  height: 600px;
+  background-color: lightblue;
+
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+}
+
+.modal-header {
+  display: flex;
+  flex-direction: row-reverse;
+  background-color: gray;
+}
+
+.btn {
+  width: 40px;
+  height: 40px;
+  border-color: black;
+  margin: 5px 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.modal-body {
+  background-color: lightblue;
+  margin-top: 15%;
+}
+
+label {
+  font-weight: bold;
+  float: left;
+  width: 170px;
+  margin-left: 28%;
+}
+
+.btn-div button {
+  font-weight: bold;
+  margin-left: 50%;
+  margin-top: 20px;
+  cursor: pointer;
+  padding: 9px 14px;
+}
+
+.input-field {
+  margin-bottom: 18px;
+}

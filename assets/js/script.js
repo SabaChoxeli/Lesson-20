@@ -9,6 +9,10 @@ function dynamicOpenModal(selector) {
     regModalClose.addEventListener("click", () => {
       dynamicClosemodal(selector);
     });
+
+    editModalClose.addEventListener("click", () => {
+      dynamicClosemodal(selector);
+    });
   }
 }
 
@@ -28,9 +32,34 @@ const editModal = document.querySelector(".f-button"),
 
 editModal.addEventListener("click", () => {
   dynamicOpenModal("#edit-modal");
-}); // მეორე მოდალის X ღილაკზე არ იმუშავა რატომღაც დახურვამ
+});
 
-editModalClose.addEventListener("click", () => {
-  const secondModal = document.querySelector("#edit-modal");
-  secondModal.classList.remove("open");
+// editModalClose.addEventListener("click", () => {
+//   const secondModal = document.querySelector("#edit-modal");
+//   secondModal.classList.remove("open");
+// });
+
+const regForm = document.querySelector("#form"),
+  userName = document.querySelector("#name"),
+  userSurname = document.querySelector("#surname"),
+  userEmail = document.querySelector("#email"),
+  userPersonalID = document.querySelector("#personal-id"),
+  userPhone = document.querySelector("#mobile-number"),
+  userZip = document.querySelector("#zip"),
+  userGender = document.querySelector("#gender"),
+  userID = document.querySelector("#user_id");
+
+regForm.addEventListener("submit", (e) => {
+  e.preventDefault();
+  const userData = {
+    id: userID.value,
+    first_name: userName.value,
+    last_name: userSurname.value,
+    phone: userPhone.value,
+    id_number: userPersonalID.value,
+    email: userEmail.value,
+    gender: userGender.value,
+    zip_code: userZip.value,
+  };
+  regForm.reset();
 });

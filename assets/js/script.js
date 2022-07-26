@@ -22,3 +22,15 @@ function dynamicClosemodal(selector) {
 regModal.addEventListener("click", () => {
   dynamicOpenModal("#registration-modal");
 });
+
+const editModal = document.querySelector(".f-button"),
+  editModalClose = document.querySelector(".edit-close");
+
+editModal.addEventListener("click", () => {
+  dynamicOpenModal("#edit-modal");
+}); // მეორე მოდალის X ღილაკზე არ იმუშავა რატომღაც დახურვამ
+
+editModalClose.addEventListener("click", () => {
+  const secondModal = document.querySelector("#edit-modal");
+  secondModal.classList.remove("open");
+});
